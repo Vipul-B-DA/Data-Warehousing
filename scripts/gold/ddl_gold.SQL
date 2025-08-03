@@ -31,7 +31,27 @@ CREATE VIEW gold.dim_customers AS
       ci.cst_key AS customer_number,
       ci.cst_firstname AS first_name,
       ci.cst_lastname AS last_name,
-      la.cntry AS country,
+      CASE 
+          WHEN la.cntry = 'United States' or la.cntry LIKE 'United States%'
+          THEN 'United States'
+          
+          WHEN la.cntry = 'Australia' or la.cntry LIKE 'Australia%'
+          THEN 'Australia' 
+
+          WHEN la.cntry = 'United Kingdom' or la.cntry LIKE 'United Kingdom%'
+          THEN 'United Kingdom' 
+
+          WHEN la.cntry = 'France' or la.cntry LIKE 'France%'
+          THEN 'France'
+
+          WHEN la.cntry = 'Canada' or la.cntry LIKE 'Canada%'
+          THEN 'Canada'
+
+          WHEN la.cntry = 'Germany' or la.cntry LIKE 'Germany%'
+          THEN 'Germany'
+
+          ELSE 'N/A'
+      END AS country,
       ci.cst_marital_status AS marital_status,
       CASE WHEN ci.cst_gndr != 'N/A'
            THEN ci.cst_gndr

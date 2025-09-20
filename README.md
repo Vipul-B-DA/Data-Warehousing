@@ -25,7 +25,7 @@ The primary goal was to consolidate disparate sales, customers and products data
 
 The project follows a three-layered Medallion Architecture, ensuring a clear and organised data flow from raw ingestion to a final, analytics-ready state.
 
-![Solution Architecture Diagram](.docs/DWH Architecture.drawio.pdf)
+![Medallion Architecture Diagram](docs/Medallion Architecture.png)
 
 ### Technical Stack
 - **Database**: Microsoft SQL Server

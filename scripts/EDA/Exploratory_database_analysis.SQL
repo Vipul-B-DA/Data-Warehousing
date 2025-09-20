@@ -1,4 +1,4 @@
--- >> EDA: Exploring data objects from out database
+-- >> EDA: Exploring data objects from our database
 
 -- DATABASE EXPLORATION
 

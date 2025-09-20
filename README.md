@@ -25,7 +25,7 @@ The primary goal was to consolidate disparate sales, customers and products data
 
 The project follows a three-layered Medallion Architecture, ensuring a clear and organised data flow from raw ingestion to a final, analytics-ready state.
 
-___((((A visual representation of the data flow from source CSVs (ERP, CRM) through the Bronze, Silver, and Gold layers, culminating in Tableau dashboards.)))____
+![Solution Architecture Diagram](.docs/DWH Architecture.drawio.pdf)
 
 ### Technical Stack
 - **Database**: Microsoft SQL Server

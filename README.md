@@ -2,10 +2,17 @@
 
 ## Project Overview
 
-Welcome to the **Data Warehouse & BI Analytics Project** repository!
+Welcome to the **Data Warehouse & BI Analytics Project** repository!  
+
 This project demonstrates a full-scale data solution, transforming raw, disconnected sales data from multiple sources into a **unified data warehouse**. This warehouse serves as a single source of truth for **driving strategic business decisions** through advanced **SQL analytics** and **interactive Tableau dashboards**. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
-The core of this project is a robust, automated data pipeline built entirely within **Microsoft SQL Server**, following a modern **Medallion Architecture** to ensure data integrity and scalability. This follows a full-scale **Data Analytics** and **Exploratory Data Analysis (EDA)** utilising MSSQL to scrape out business insights and transform our cleaned data into a more presentable, report-friendly format. It ends with creating two **interactive visualisations** of the refined data in the form of **Tableau Dashboards**.
+- The core of this project is a robust, automated data pipeline built entirely within **Microsoft SQL Server**, following a modern **Medallion Architecture** to ensure data integrity and scalability.
+
+
+- This follows a full-scale **Data Analytics** and **Exploratory Data Analysis (EDA)** utilising MSSQL to scrape out business insights and transform our cleaned data into a more presentable, report-friendly format.
+
+
+- It ends with creating two **interactive visualisations** of the refined data in the form of **Tableau Dashboards**.
  
 ---
 
@@ -25,7 +32,7 @@ The primary goal was to consolidate disparate sales, customers and products data
 
 The project follows a three-layered Medallion Architecture, ensuring a clear and organised data flow from raw ingestion to a final, analytics-ready state.
 
-![Medallion Architecture Diagram](docs/Medallion Architecture.png)
+![Medallion Architecture Diagram](docs/Medallion%20Architecture.png)
 
 ### Technical Stack
 - **Database**: Microsoft SQL Server
@@ -75,7 +82,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ## Interactive Tableau Dashboards
 The refined data from the Gold layer was connected to Tableau to create a dynamic BI solution.
 
-____((( GIF )))____
+![Interactive Tableau Dashboard Demo]()
 
 #### Dashboards Created
 - **Sales Dashboard**: Provides a high-level overview of sales trends, geographical performance, and profit analysis by product category.

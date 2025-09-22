@@ -14,14 +14,7 @@ load_dotenv()
 # --- 1. Initialize the Flask App ---
 app = Flask(__name__)
 
-# --- 2. Configure the Database Connection using SQLAlchemy ---
-# !! IMPORTANT: Replace with your actual server details, username, and password !!
-# SQL Server Authentication is more straightforward for cross-platform connections.
-server = 'localhost'
-database = 'DataWarehouse'
-username = 'SA'
-password = os.getenv('DB_PASSWORD')
-driver = 'ODBC Driver 17 for SQL Server' # This must match the driver you installed
+# --- 2. Configure the Database Connection using SQLAlchemy From Render Environment Variable---
 
 connection_string = os.environ.get('DATABASE_CONNECTION_STRING')
 quoted_connection_string = quote_plus(connection_string)
@@ -29,14 +22,6 @@ sqlalchemy_url = f"mssql+pyodbc:///?odbc_connect={quoted_connection_string}"
 
 # Create the SQLAlchemy engine
 engine = sqlalchemy.create_engine(sqlalchemy_url)
-
-
-# This is the SQLAlchemy connection string (URI)
-connection_uri = f'mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}'
-
-# Create the SQLAlchemy engine
-engine = create_engine(connection_uri)
-
 
 # Added the Pydantic model definition
 class ProductModel(BaseModel):

@@ -116,6 +116,62 @@ The refined data from the Gold layer was connected to Tableau to create a dynami
 
 
 ---
+## >> Cloud-Deployed REST API for Live Web-Based Analytics
+
+To make the insights from the data warehouse accessible for modern applications, I developed and deployed a production-grade RESTful API. This API serves the cleaned and aggregated data from the Gold layer, enabling real-time analytics and integration with other services.
+- Live API Base Public URL: [https://my-datapipleine-sales-api.onrender.com](https://my-datapipleine-sales-api.onrender.com)
+
+![Snapshot of Live API GET Request on browser]()
+
+
+### > Live API Endpoints
+The API exposes the key analytical views, allowing for dynamic data retrieval.
+
+#### -> Get All Products:
+- **Endpoint**: */api/products*
+- **Description**: Retrieves a complete list of all products with their performance metrics.
+- **Live Link**: [https://my-datapipleine-sales-api.onrender.com/api/products](https://my-datapipleine-sales-api.onrender.com/api/products)
+
+#### -> Get Customers By Segment (New,Regular,VIP):
+- **Endpoint**: */api/customers/{segment}*
+- **Description**: Returns a list of customers belonging to a specific segment (e.g., VIP, Regular, New).
+- **Live Link Example**: [https://my-datapipleine-sales-api.onrender.com/api/customers/Regular](https://my-datapipleine-sales-api.onrender.com/api/customers/Regular)
+
+#### -> Get Specific Product Information by Product Key:
+- **Endpoint**: */api/products/{product_key}*
+- **Description**: Returns a specific product with the key matching as the proivded product_key.
+- **Live Link Example**: [https://my-datapipleine-sales-api.onrender.com/api/products/101](https://my-datapipleine-sales-api.onrender.com/api/products/101)
+
+
+### > API Architecture & Tech Stack
+The API was built with a modern, scalable, and cloud-native architecture.
+
+- **Programming Language**: Python
+- **Web Framework**: Flask
+- **Database**: PostgreSQL (hosted on Supabase)
+- **Deployment Platform**: Render (PaaS - Platform as a Service)
+- **Container**: Docker
+- **Libraries**: SQLAlchemy (for ORM), Gunicorn (for WSGI server)
+
+
+### > The Deployment Journey: From Local to Live
+This project involved a complete end-to-end deployment lifecycle, showcasing skills in cloud infrastructure and DevOps practices.
+
+- **Database Migration**: The initial data warehouse was built on a local SQL Server instance. For cloud deployment, the schema and sample data were migrated to a cloud-native PostgreSQL database hosted on **Supabase**.
+
+- **Containerization with Docker**: The Python Flask application was containerized using a Dockerfile. This ensures a consistent, reproducible, and isolated environment, which is crucial for reliable deployments.
+
+- **Cloud Deployment & CI/CD**: The containerized application was deployed on Render. A CI/CD pipeline was established by linking the service to the GitHub repository, enabling automatic deployments on every git push.
+
+- **Networking & Security**: I configured firewall rules on the Supabase database to securely allowlist the outbound IP addresses from the Render service, ensuring a secure and reliable connection between the API and the database.
+
+
+### > How to Test the API
+- **GET Requests**: The GET endpoints listed above can be tested directly in your web browser.
+
+- **POST, PUT, DELETE**: To test the full CRUD functionality (creating, updating, and deleting products), an API client like Postman is required
+
+---
 
 ## >> License
 

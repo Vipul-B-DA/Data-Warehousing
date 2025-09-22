@@ -121,9 +121,15 @@ The refined data from the Gold layer was connected to Tableau to create a dynami
 To make the insights from the data warehouse accessible for modern applications, I developed and deployed a production-grade RESTful API. This API serves the cleaned and aggregated data from the Gold layer, enabling real-time analytics and integration with other services.
 - Live API Base Public URL: [https://my-datapipleine-sales-api.onrender.com](https://my-datapipleine-sales-api.onrender.com)
 
-API Features Include:
+### API Features Include:  
+
+
 - **Full CRUD Functionality**: We can perform CREATE(GET), READ(POST), UPDATE(PUT) and even DELETE in this API utilising Postman or similar software.
+
+
 - **Validation**: Validation was checked via code and our API was tested on only a sample database created at Supabase itself.
+
+
 - **Error Handling**: It was designed to handle errors in a more user-friendly manner, giving out brief error messsage display that is interpretable.
 
 

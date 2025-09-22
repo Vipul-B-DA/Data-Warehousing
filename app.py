@@ -16,11 +16,7 @@ app = Flask(__name__)
 
 # --- 2. Configure the Database Connection using SQLAlchemy From Render Environment Variable---
 
-connection_string = os.environ.get('DATABASE_CONNECTION_STRING')
-quoted_connection_string = quote_plus(connection_string)
-sqlalchemy_url = f"mssql+pyodbc:///?odbc_connect={quoted_connection_string}"
-
-# Create the SQLAlchemy engine
+sqlalchemy_url = os.environ.get('DATABASE_CONNECTION_STRING')
 engine = sqlalchemy.create_engine(sqlalchemy_url)
 
 # Added the Pydantic model definition

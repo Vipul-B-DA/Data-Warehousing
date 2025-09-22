@@ -5,6 +5,7 @@ from pydantic import BaseModel, ValidationError
 from flask import abort 
 import os
 from dotenv import load_dotenv
+from urllib.parse import quote_plus
 
 load_dotenv()
 
@@ -20,6 +21,14 @@ database = 'DataWarehouse'
 username = 'SA'
 password = os.getenv('DB_PASSWORD')
 driver = 'ODBC Driver 17 for SQL Server' # This must match the driver you installed
+
+connection_string = os.environ.get('DATABASE_CONNECTION_STRING')
+quoted_connection_string = quote_plus(connection_string)
+sqlalchemy_url = f"mssql+pyodbc:///?odbc_connect={quoted_connection_string}"
+
+# Create the SQLAlchemy engine
+engine = sqlalchemy.create_engine(sqlalchemy_url)
+
 
 # This is the SQLAlchemy connection string (URI)
 connection_uri = f'mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}'

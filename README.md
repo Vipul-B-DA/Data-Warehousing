@@ -1,4 +1,4 @@
-# End-to-End Sales Analytics Pipeline: SQL Data Warehouse & Tableau Dashboards
+# End-to-End Sales Analytics Pipeline with REST API: SQL Data Warehouse -> Tableau Dashboards -> API Integration
 
 ## >> Project Overview 
 

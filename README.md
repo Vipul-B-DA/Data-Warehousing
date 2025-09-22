@@ -121,7 +121,7 @@ The refined data from the Gold layer was connected to Tableau to create a dynami
 To make the insights from the data warehouse accessible for modern applications, I developed and deployed a production-grade RESTful API. This API serves the cleaned and aggregated data from the Gold layer, enabling real-time analytics and integration with other services.
 - Live API Base Public URL: [https://my-datapipleine-sales-api.onrender.com](https://my-datapipleine-sales-api.onrender.com)
 
-![Snapshot of Live API GET Request on browser]()
+![Snapshot of API Base URL working on browser](docs/API_BaseURL_snap.png)
 
 
 ### > Live API Endpoints
@@ -164,6 +164,9 @@ This project involved a complete end-to-end deployment lifecycle, showcasing ski
 - **Cloud Deployment & CI/CD**: The containerized application was deployed on Render. A CI/CD pipeline was established by linking the service to the GitHub repository, enabling automatic deployments on every git push.
 
 - **Networking & Security**: I configured firewall rules on the Supabase database to securely allowlist the outbound IP addresses from the Render service, ensuring a secure and reliable connection between the API and the database.
+
+
+![Snapshot of LIVE API GET Request on WebBroswer After Deployment]()
 
 
 ### > How to Test the API

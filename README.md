@@ -166,7 +166,7 @@ This project involved a complete end-to-end deployment lifecycle, showcasing ski
 - **Networking & Security**: I configured firewall rules on the Supabase database to securely allowlist the outbound IP addresses from the Render service, ensuring a secure and reliable connection between the API and the database.
 
 
-![Snapshot of LIVE API GET Request on WebBroswer After Deployment]()
+![Snapshot of LIVE API GET Request on WebBroswer After Deployment](docs/API_Snapshot.png)
 
 
 ### > How to Test the API

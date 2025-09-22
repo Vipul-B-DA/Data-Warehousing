@@ -4,6 +4,7 @@ from flask import request
 from pydantic import BaseModel, ValidationError
 from flask import abort 
 import os
+import sqlalchemy
 from dotenv import load_dotenv
 from urllib.parse import quote_plus
 

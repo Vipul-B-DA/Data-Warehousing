@@ -1,9 +1,8 @@
-# End-to-End Sales Analytics Pipeline with REST API:  
-# SQL Data Warehouse -> Tableau Dashboards -> API Integration
+# End-to-End Sales Analytics Pipeline with REST API : </br> SQL Data Warehouse -> Tableau Dashboards -> API Integration
 
 ## >> Project Overview 
 
-Welcome to the **Data Warehouse & BI Analytics Project with RESTful API** repository!  
+Welcome to the **Data Warehouse & BI Analytics with RESTful API** Project repository!  
 
 This project demonstrates a full-scale data solution, transforming raw, disconnected sales data from multiple sources into a **unified data warehouse**. This warehouse serves as a single source of truth for **driving strategic business decisions** through advanced **SQL analytics** and **interactive Tableau dashboards**. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 

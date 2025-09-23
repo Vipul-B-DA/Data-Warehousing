@@ -82,7 +82,10 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ---
 
 ## >> Interactive Tableau Dashboards 
-The refined data from the Gold layer was connected to Tableau to create a dynamic BI solution. [View the Dashboard on Tableau Public](https://public.tableau.com/app/profile/vipul.b1538/viz/Dashboard_Project_17547917490050/CustomerDashboard)
+The refined data from the Gold layer was connected to Tableau to create a dynamic BI solution. 
+- Tableau Public Profile Link: [View the Dashboard on Tableau Public](https://public.tableau.com/app/profile/vipul.b1538/viz/Dashboard_Project_17547917490050/CustomerDashboard)
+
+
 
 ![Interactive Tableau Dashboard Demo](docs/Tableau_dashboard.gif)
 
